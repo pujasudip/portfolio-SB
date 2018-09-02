@@ -1,6 +1,6 @@
 <?php 
-$emailTo = 'yourmail@example.com';
-$siteTitle = 'YourSiteTitle';
+$emailTo = 'pujasudip@gmail.com';
+$siteTitle = 'www.codingbaral.com';
 
 error_reporting(E_ALL ^ E_NOTICE); // hide all basic notices from PHP
 
@@ -59,4 +59,6 @@ if(isset($_POST['submitted'])) {
 		$emailSent = true;
 	}
 }
+
+print($_POST['contactName']);
 ?>
