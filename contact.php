@@ -1,4 +1,7 @@
-<?php 
+<?php
+
+header('Access-Control-Allow-Origin: *');
+
 $emailTo = 'pujasudip@gmail.com';
 $siteTitle = 'www.codingbaral.com';
 
