@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eae7f87f-df09-4764-ba80-1c71cd674679" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/images/header-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/header-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="eae7f87f-df09-4764-ba80-1c71cd674679" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="407" column="167" selection-start-line="407" selection-start-column="167" selection-end-line="407" selection-end-column="167" />
+            <state relative-caret-position="4921">
+              <caret line="413" column="150" lean-forward="true" selection-start-line="413" selection-start-column="150" selection-end-line="413" selection-end-column="150" />
             </state>
           </provider>
         </entry>
@@ -151,12 +148,12 @@
       <option name="presentableId" value="Default" />
       <updated>1534960530013</updated>
       <workItem from="1534960531516" duration="618000" />
-      <workItem from="1537209533006" duration="2896000" />
+      <workItem from="1537209533006" duration="3523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3514000" />
+    <option name="totallyTimeSpent" value="4141000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="725" extended-state="0" />
@@ -284,8 +281,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="407" column="167" selection-start-line="407" selection-start-column="167" selection-end-line="407" selection-end-column="167" />
+        <state relative-caret-position="4921">
+          <caret line="413" column="150" lean-forward="true" selection-start-line="413" selection-start-column="150" selection-end-line="413" selection-end-column="150" />
         </state>
       </provider>
     </entry>
