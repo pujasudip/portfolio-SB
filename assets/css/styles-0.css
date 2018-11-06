@@ -41,54 +41,72 @@
     background-color: #887a44;
     text-decoration: none;
 }
-.foodProject{
-    width: 100%;
-    height: 500px;
+.foodProjectContainer, .checkersContainer, .sgtContainer{
+    border: 1px solid #8d8d8d;
+    box-shadow: 5px 5px 5px 1px rgba(205, 205, 205, 0.57);
+    text-align: center;
+    text-transform: uppercase;
 }
-.foodImg{
-    width: 80%;
-    height: 400px;
-    background-image: url("../images/food.png");
+.foodProject, .checkersProject, .sgtProject{
+    width: 95%;
+    margin: 0 auto 25px;
+    height: 300px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.foodImg, .checkersImg, .sgtImg{
+    display: inline-block;
+    width: 65%;
+    height: 100%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    margin: auto;
+    cursor: default;
 }
-.foodDesc{
-    width: 80%;
-    height: 100px;
+.foodDesc, .checkersDesc, .sgtDesc{
+    display: inline-block;
+    width: 32%;
+    height: 100%;
     background-color: rgba(144, 255, 152, 0.48);
-    margin: auto;
+    border: 3px ridge rgba(144, 255, 152, 0.48);
+    position: relative;
+    cursor: default;
 }
-.checkers{
-     width: 100%;
-     height: 100px;
- }
+.foodImg{
+    background-image: url("../images/food.png");
+}
+.foodResource{
+    position: absolute;
+    bottom: 10px;
+}
 .checkersImg{
-    display: inline-block;
-    width: 49%;
-    height: 100px;
-    background-color: rgba(255, 0, 0, 0.48);
+    background-image: url("../images/checkers.png");
 }
-.checkersDesc{
-    display: inline-block;
-    width: 49%;
-    height: 100px;
-    background-color: rgba(255, 0, 0, 0.48);
-}
-.sgt{
-    width: 100%;
-    height: 100px;
+.checkersResource{
+    position: absolute;
+    bottom: 10px;
 }
 .sgtImg{
-    display: inline-block;
-    width: 49%;
-    height: 100px;
-    background-color: rgba(255, 0, 0, 0.48);
+    background-image: url("../images/sgt.png");
 }
-.sgtDesc{
-    display: inline-block;
-    width: 49%;
-    height: 100px;
-    background-color: rgba(255, 252, 46, 0.48);
+.sgtResource{
+    position: absolute;
+    bottom: 10px;
 }
+@media only screen and (max-width: 600px){
+    .foodImg{
+        background-image: url("../images/foodMobile.png");
+    }
+    .checkersImg{
+        background-image: url("../images/checkersMobile.png");
+    }
+    .sgtImg{
+        background-image: url("../images/sgtMobile.png");
+    }
+}
+.foodHeader{
+    width: 100%;
+}
+
