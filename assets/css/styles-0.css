@@ -33,13 +33,13 @@
 .resumeHome:visited{
     color: #b40034;
 }
-.githubHome:visited{
-    color: #b40034;
-}
 .githubHome:hover{
     color: white;
     background-color: #887a44;
     text-decoration: none;
+}
+.githubHome:visited{
+    color: #b40034;
 }
 .foodProjectContainer, .checkersContainer, .sgtContainer{
     border: 1px solid #8d8d8d;
