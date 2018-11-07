@@ -1,6 +1,7 @@
 <?php
 require_once('contactCredential.php');
-require('phpmailer/PHPMailer/PHPMailerAutoload.php');
+//require('phpmailer/PHPMailer/PHPMailerAutoload.php');
+require('php_mailer/phpmailer/PHPMailer/PHPMailerAutoload.php');
 
 foreach($_POST as $key=>$value){
     $_POST[$key] = htmlentities(addslashes($value));
