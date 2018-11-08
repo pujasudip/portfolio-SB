@@ -85,29 +85,29 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 .color1 .service-icon,
 .color1.service-item ul li:nth-child(2):before{
-    background:#509B9E;
+    background: rgba(42, 56, 66, 0.75);
 }
 
 .color1 .service-icon:after{
-    border:3px solid #509B9E;
+    border:3px solid rgba(42, 56, 66, 0.75);
 }
 
 .color2 .service-icon,
 .color2.service-item ul li:nth-child(2):before{
-    background:#F28C83;
+    background:rgba(42, 56, 66, 0.75);
 }
 
 .color2 .service-icon:after{
-    border:3px solid #F28C83;
+    border:3px solid rgba(42, 56, 66, 0.75);
 }
 
 .color3 .service-icon,
 .color3.service-item ul li:nth-child(2):before{
-    background:#334959;
+    background:rgba(42, 56, 66, 0.75);
 }
 
 .color3 .service-icon:after{
-    border:3px solid #334959;
+    border:3px solid rgba(42, 56, 66, 0.75);
 }
 
 /*------------------

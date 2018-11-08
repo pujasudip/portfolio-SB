@@ -5,6 +5,7 @@ $(document).ready(function() {
 			errorMessage = $('#contact-form button').data('error-message'),
 			sendingMessage = $('#contact-form button').data('sending-message'),
 			okMessage = $('#contact-form button').data('ok-message'),
+			networkError = $('#contact-form button').data('network-message'),
 			hasError = false;
 		
 		$('#contact-form .error-message').remove();
@@ -34,6 +35,12 @@ $(document).ready(function() {
 		}
 		else {
 			$('#contact-form button').html('<i class="fa fa-spinner fa-spin"></i>'+sendingMessage);
+
+			var online = navigator.onLine;
+
+			if(!online){
+                $('#contact-form button').html('<i class="fa fa-exclamation-triangle"></i>'+networkError);
+			}
 			
 			var formInput = $(this).serialize();
 			$.post($(this).attr('action'),formInput, function(data){
