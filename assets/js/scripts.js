@@ -22,10 +22,10 @@ $(document).ready(function() {
     $(window).scroll(function(){
         $('iframe').each(function(){
             if(isScrolledIntoView($(this))){
-                console.log('visible:', $(this));
+                // console.log('visible:', $(this));
             }
             else{
-                console.log('invisible', $(this))
+                // console.log('invisible', $(this))
             }
         });
     });
@@ -164,14 +164,14 @@ $(document).ready(function() {
 });
 
 function isScrolledIntoView(elem){
-    var $elem = $(elem);
-    var $window = $(window);
-
-    var docViewTop = $window.scrollTop();
-    var docViewBottom = docViewTop + $window.height();
-
-    var elemTop = $elem.offset().top;
-    var elemBottom = elemTop + $elem.height();
-
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    // var $elem = $(elem);
+    // var $window = $(window);
+	//
+    // var docViewTop = $window.scrollTop();
+    // var docViewBottom = docViewTop + $window.height();
+	//
+    // var elemTop = $elem.offset().top;
+    // var elemBottom = elemTop + $elem.height();
+	//
+    // return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }

@@ -50,7 +50,73 @@
 	
 		<!--=== PAGE PRELOADER ===-->
 		<div id="page-loader"><span class="page-loader-gif"></span></div>
-		
+
+		<!--Youtube API builder-->
+		<div id="player"></div>
+
+		<script>
+            // 2. This code loads the IFrame Player API code asynchronously.
+            var tag = document.createElement('script');
+
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            // 3. This function creates an <iframe> (and YouTube player)
+            //    after the API code downloads.
+            var player;
+            function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                    height: '390',
+                    width: '640',
+                    videoId: 'M7lc1UVf-VE',
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    },
+                    playerVars: {
+                        'start': 1
+					}
+                });
+            }
+
+            // 4. The API will call this function when the video player is ready.
+            function onPlayerReady(event) {
+                event.target.playVideo();
+            }
+
+            // 5. The API calls this function when the player's state changes.
+            //    The function indicates that when playing a video (state=1),
+            //    the player should play for six seconds and then stop.
+            var done = false;
+            function onPlayerStateChange(event) {
+                var playerContainer = document.getElementById('player');
+                console.log('visible:', playerContainer.isShown);
+
+                if (event.data == YT.PlayerState.PLAYING && !done) {
+                    setTimeout(stopVideo, 6000);
+                    done = true;
+                }
+            }
+            function stopVideo() {
+                player.stopVideo();
+            }
+
+            function isScrolledIntoView(elem){
+                var $elem = $(elem);
+                var $window = $(window);
+
+                var docViewTop = $window.scrollTop();
+                var docViewBottom = docViewTop + $window.height();
+
+                var elemTop = $elem.offset().top;
+                var elemBottom = elemTop + $elem.height();
+
+                return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+            }
+		</script>
+
+		<!--Youtube API ends-->
 	
 		<!-- ==============================================
 		MAIN NAV
@@ -445,7 +511,7 @@
 		=============================================== -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.9.1.min.js">\x3C/script>')</script>
-		
+
 		<script src="assets/js/libs/bootstrap.min.js"></script>
 		<script src="assets/js/jquery.scrollto.js"></script>
 		<script src="assets/js/waypoints.min.js"></script>
