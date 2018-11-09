@@ -8,8 +8,27 @@ $(document).ready(function() {
 		$('#page-loader').fadeOut(500,function(){
 
 		});
-		
-	})	
+
+		$('.backstretch > img').attr('alt', 'background image of leaf');
+
+		window.addEventListener('scroll', function(){
+            let hamMenuIcon = document.getElementById('hamMenuIcon');
+			let hamMenu = document.getElementById('site-nav');
+			hamMenu.style.height = '1px';
+			hamMenu.classList.remove('in');
+		});
+	})
+
+    $(window).scroll(function(){
+        $('iframe').each(function(){
+            if(isScrolledIntoView($(this))){
+                console.log('visible:', $(this));
+            }
+            else{
+                console.log('invisible', $(this))
+            }
+        });
+    });
 	
 	/*============================================
 	Header
@@ -31,7 +50,7 @@ $(document).ready(function() {
 			sf = 1.2 - st/(10*wh);
 		
 		$('.backstretch img').css({ 
-			'transform' : 'scale('+sf+')', 
+			'transform' : 'scale('+sf+')',
 			'-webkit-transform' : 'scale('+sf+')'
 		});
 		
@@ -143,3 +162,16 @@ $(document).ready(function() {
 		},1000);
 	}
 });
+
+function isScrolledIntoView(elem){
+    var $elem = $(elem);
+    var $window = $(window);
+
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
