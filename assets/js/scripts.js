@@ -22,10 +22,10 @@ $(document).ready(function() {
     $(window).scroll(function(){
         $('iframe').each(function(){
             if(isScrolledIntoView($(this))){
-                console.log('visible:', $(this));
+                // console.log('visible:', $(this));
             }
             else{
-                console.log('invisible', $(this))
+                // console.log('invisible', $(this))
             }
         });
     });
