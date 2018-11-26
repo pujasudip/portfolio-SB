@@ -1,0 +1,160 @@
+#site-nav{
+    position: relative;
+}
+#main-nav .navbar-brand{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.git_res{
+    display: flex;
+    justify-content: center;
+}
+.resumeHome, .githubHome{
+    position: relative;
+    border: 1px solid rgba(255, 0, 0, 0);
+    display: inline-block;
+    width: 25%;
+    border-radius: 5px;
+    background-color: #bcae60;
+    color: ghostwhite;
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 1px 1px white;
+}
+.resumeHome:hover{
+    color: white;
+    background-color: #887a44;
+    text-decoration: none;
+}
+.resumeHome:visited{
+    color: white;
+}
+.githubHome:hover{
+    color: white;
+    background-color: #887a44;
+    text-decoration: none;
+}
+.githubHome:visited{
+    color: white;
+}
+.foodProjectContainer, .checkersContainer, .sgtContainer{
+    border: 1px solid #8d8d8d;
+    box-shadow: 5px 5px 5px 1px rgba(205, 205, 205, 0.57);
+    text-align: center;
+    text-transform: uppercase;
+    width: 95%;
+    margin: 0 auto 3%;
+    overflow: auto;
+    border-radius: 10px;
+}
+.foodHeader, .checkersHeader, .sgtHeader{
+    color: #fcff81;
+    font-weight: bold;
+    font-family: "Apple Chancery";
+}
+.lfzProjects p{
+    text-transform: none;
+}
+.foodProject, .checkersProject, .sgtProject{
+    margin: 0 auto 25px;
+    height: 500px;
+}
+.checkersImg > iframe{
+    width: 100%;
+    height: 100%;
+}
+.foodImg, .checkersImg, .sgtImg{
+    width: 100%;
+    height: 70%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: default;
+}
+.foodDesc, .checkersDesc, .sgtDesc{
+    width: 90%;
+    height: 30%;
+    margin: 1% auto 0;
+    background-color: rgba(144, 255, 152, 0.3);
+    border: 3px ridge rgba(144, 255, 152, 0.3);
+    position: relative;
+    cursor: default;
+    border-radius: 5px;
+    padding: 10px;
+}
+.foodImg{
+    /*background-image: url("../images/food.png");*/
+}
+.foodImg > iframe{
+    width: 100%;
+    height: 100%;
+}
+.foodResource{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+.checkersImg{
+    /*background-image: url("../images/checkers.png");*/
+}
+.checkersResource{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+.sgtImg{
+    /*background-image: url("../images/sgt.png");*/
+}
+.sgtImg > iframe{
+    width: 100%;
+    height: 100%;
+}
+.sgtResource{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+.techUsed{
+    color: #ffbeaa;
+}
+.techUsedHeader{
+    color: #1f010d;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px){
+    .foodImg{
+        background-image: url("../images/foodMobile.png");
+    }
+    .checkersImg{
+        background-image: url("../images/checkersMobile.png");
+    }
+    .sgtImg{
+        background-image: url("../images/sgtMobile.png");
+    }
+    .gitText{
+        display: none;
+    }
+    .webText{
+        display: none;
+    }
+    .foodImg, .checkersImg, .sgtImg{
+        height: 60%;
+    }
+    .foodDesc, .checkersDesc, .sgtDesc{
+        font-size: 14px;
+        height: 40%;
+    }
+}
+@media only screen and (max-width: 767px){
+    .contactText{
+        text-align: center;
+    }
+}
+
