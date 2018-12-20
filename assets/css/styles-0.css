@@ -158,3 +158,11 @@
     }
 }
 
+.contactInfo > h3 {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.contactInfo > p {
+    margin-top: 5px;
+}
